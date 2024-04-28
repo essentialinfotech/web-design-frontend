@@ -1,0 +1,419 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import 'themify-icons/themify-icons';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+button:focus {
+    outline: 0px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+.clr {
+    clear: both;
+}
+
+
+
+
+
+/* section head style */
+
+.section_head {}
+
+.section_head h5 {
+    color: #878787;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.section_head h2 {
+    color: #111111;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section_head p {
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+/* End of common CSS */
+
+/*=========================
+
+    01.HEADER AREA CSS
+
+=========================*/
+.header_area{
+    padding: 0 10px;
+}
+.header_area .navbar{
+    padding: 0;
+    margin: 0;
+}
+.header_area .navbar .navbar-nav .nav-item .nav-link{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    padding: 14px 10px;
+}
+.header_area .navbar .navbar-nav.last_bar .nav-item .nav-link{
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000000;
+    padding: 8px 24px;
+    border-radius: 50px;
+}
+.header_area .navbar .navbar-nav.last_bar .nav-item .nav-link:hover{
+    background: #f6783a;
+    color: #ffffff;
+    transition: all .5s linear;
+}
+.header_area .navbar .navbar-nav .nav-item .nav-link:hover{
+    background: #f67831;
+    transition: all .5s linear;
+}
+/*=========================
+
+    02.SERVICE AREA CSS
+
+=========================*/
+.service_area{
+    margin-bottom: 80px;
+}
+.service_area .service_content h2{
+    font-size: 24px;
+}
+.service_area .service_content ul{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+.service_area .service_content ul li{
+    padding: 4px 16px;
+    border: 1px solid #f6783a;
+    border-radius: 45px;
+    margin-bottom: 10px;
+    color: #374151;
+    width: fit-content;
+}
+.service_area .service_content ul li i{
+    color: #f6783a;
+}
+.service_area .service_content ul li span{
+    padding-left: 5px;
+}
+.service_area .service_content a{
+    text-decoration: none;
+    width: 250px;
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+    padding: 15px 36px;
+    background: #f6783a;
+    border-radius: 45px;
+    color: #ffffff;
+}
+/*=========================
+
+    03.PROCESS AREA CSS
+
+=========================*/
+.process_area{
+    padding: 50px 0;
+}
+.process_area .process_counter{
+    background: #f6783a;
+    margin-top: 30px;
+}
+.process_area .process_counter .single_counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.process_area .process_counter .single_counter .counter_txt{
+    margin-left: 20px;
+}
+.process_area .process_counter .single_counter h2{
+    margin: 0;
+    font-size: 48px;
+}
+.process_area .process_counter .single_counter p {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+/*=========================
+
+    04.TESTIMONIALS AREA CSS
+
+=========================*/
+.testimonials_area .testimonial_slider{
+    margin: 40px 0;
+}
+.testimonials_area .testimonial_slider .single_slider{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin: 0 15px;
+}
+.testimonials_area .testimonial_slider .single_slider img {
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+}
+.testimonials_area .testimonial_slider .single_slider .slider_txt {
+    padding-left: 10px;
+}
+.testimonials_area .testimonial_slider .single_slider .slider_txt h2{
+    font-size: 24px;
+    color: #111111;
+}
+.testimonials_area .testimonial_slider .single_slider .slider_txt p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7289;
+}
+/*=========================
+
+   05.FOOTER AREA CSS
+
+=========================*/
+.footer_area{
+    background: #333333;
+    padding: 40px 0;
+    padding-bottom: 0;
+}
+.footer_area .footer_first p {
+    font-size: 16px;
+    color: #6b7280;
+    margin-top: 16px;
+    padding-right: 70px;
+}
+.footer_area .footer_first .add{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.footer_area .footer_first .add i {
+    color: rgb(246, 120, 58);
+    font-weight: bold;
+    font-size: 30px;
+    padding-right: 10px;
+}
+.footer_area .footer_first .social_link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+.footer_area .footer_first .social_link i{
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background: #f6783a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.footer_area .footer_second h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+
+.footer_area .footer_second ul{
+    margin: 0;
+    padding: 0;
+}
+.footer_area .footer_second li {
+    margin-bottom: 10px;
+}
+.footer_area .footer_second li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+
+}
+.footer_area .footer_third h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+
+.footer_area .footer_third ul{
+    margin: 0;
+    padding: 0;
+}
+.footer_area .footer_third li {
+    margin-bottom: 10px;
+}
+.footer_area .footer_third li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.footer_area .footer_third li a i{
+    color: #f6783a;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.footer_area .footer_forth h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 24px;
+    margin-top: 20px;
+}
+.footer_area .footer_forth p{
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 400;
+}
+.footer_area .footer_forth form{
+    width: 100%;
+}
+.footer_area .footer_forth .mail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer_area .footer_forth .mail input {
+    border: 1px solid #f6783a;
+    border-radius: 2px 0 0 2px;
+    width: 70%;
+    padding: 5px 10px;
+}
+.footer_area .footer_forth .mail button {
+    text-decoration: none;
+    background: #f6783a;
+    border-radius: 0 2px 2px 0;
+    color: #ffffff;
+    border: 1px solid #f6783a;
+    padding: 5px 10px;
+}
+.footer_area .footer_end{
+    background: #f6783a;
+    padding: 10px 0;
+    color: #ffffff;
+}
+.footer_area .footer_end .credit a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+/*=========================
+
+=========================*/
+
+    /* BLOG PAGE */
+
+/*=========================
+
+=========================*/
+.blog_area .blog_wrap .single_blog {
+    border: 1px solid #dddddd;
+    margin-bottom: 30px;
+}
+.blog_area .blog_wrap .single_blog .blog_txt {
+    padding: 20px 15px;
+}
+.blog_area .blog_wrap .single_blog h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7289;
+    padding-bottom: 10px;
+}
+.blog_area .blog_wrap .single_blog p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7289;
+}
+.blog_area .blog_wrap .single_blog span{
+    font-weight: 600;
+}
+
+/*=========================
+
+=========================*/
+
+    /* TUTORIAL PAGE */
+
+/*=========================
+
+=========================*/
+.tutorials_area .tutorial_wrap{
+    padding: 30px 0;
+    padding-bottom: 80px;
+}
+.tutorials_area .tutorial_wrap .single_tutorial iframe {
+    border: 0;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+.tutorials_area .tutorial_wrap .single_tutorial h3{
+    font-size: 18px;
+    margin-top: 16px;
+    text-transform: capitalize;
+}
