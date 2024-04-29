@@ -1,6 +1,6 @@
 /*google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import 'themify-icons/themify-icons';
+/* @import 'themify-icons/themify-icons'; */
 
 * {
     margin: 0;
@@ -10,6 +10,7 @@
 
 body {
     font-family: "Ubuntu", sans-serif;
+    overflow-x: hidden;
 }
 
 button:focus {
@@ -85,8 +86,12 @@ h6 {
     01.HEADER AREA CSS
 
 =========================*/
-.header_area{
-    padding: 0 10px;
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    padding: 0;
+}
+.header_area {
+    padding: 0;
+    border-bottom: 1px solid #dddddd;
 }
 .header_area .navbar{
     padding: 0;
@@ -126,6 +131,9 @@ h6 {
 }
 .service_area .service_content h2{
     font-size: 24px;
+}
+.service_area .service_content h2 br{
+    display: none;
 }
 .service_area .service_content ul{
     margin: 0;
@@ -371,6 +379,9 @@ h6 {
 /*=========================
 
 =========================*/
+.blog_area{
+    padding: 60px 0;
+}
 .blog_area .blog_wrap .single_blog {
     border: 1px solid #dddddd;
     margin-bottom: 30px;
@@ -402,9 +413,15 @@ h6 {
 /*=========================
 
 =========================*/
+.tutorials_area{
+    padding: 60px 0;
+}
 .tutorials_area .tutorial_wrap{
     padding: 30px 0;
     padding-bottom: 80px;
+}
+.tutorials_area .tutorial_wrap .single_tutorial {
+    margin-bottom: 20px;
 }
 .tutorials_area .tutorial_wrap .single_tutorial iframe {
     border: 0;
@@ -416,4 +433,309 @@ h6 {
     font-size: 18px;
     margin-top: 16px;
     text-transform: capitalize;
+}
+
+/*=========================
+
+=========================*/
+
+    /* INFORMATION PAGE */
+
+/*=========================
+
+=========================*/
+.information_area{
+    padding: 60px 0;
+}
+.information_area .information_wrap .single_information {
+    margin-left: 60px;
+    border: 1px solid #f6783a;
+    margin-bottom: 20px;
+}
+.information_area .information_wrap span {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    background: #f6783a;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.information_area .information_wrap p {
+    position: relative;
+    margin: 0;
+}
+.information_area .information_wrap p span{
+    position: absolute;
+    top: 0;
+    left: -60px;
+}
+.information_area .information_wrap p a.btn-primary {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #000000;
+    border-radius: 0;
+}
+.information_area .information_wrap p a.btn:focus{
+    outline: none;
+}
+.information_area .information_wrap a[aria-expanded="false"] .fa-angle-down{
+    display: inline-block;
+}
+.information_area .information_wrap a[aria-expanded="false"] .fa-angle-up{
+    display: none;
+}
+.information_area .information_wrap a[aria-expanded="true"] .fa-angle-down{
+    display: none;
+}
+.information_area .information_wrap a[aria-expanded="true"] .fa-angle-up{
+    display: inline-block;
+}
+.information_area .information_wrap .single_information .collapse{
+    border: none;
+    color: #000000;
+    border-radius: 0;
+    border-top: 1px solid #f6783a;
+}
+.information_area .information_wrap .single_information .collapse .card {
+    background: #fde4d8;
+    border-radius: 0;
+}
+/* .information_area .information_wrap .single_information:after {
+    position: absolute;
+    content: '';
+    height: calc(100% - 45px);
+    left: 20px;
+    top: 48px;
+    border-left: 1px dashed #6c6e70;
+} */
+
+/*=========================
+
+=========================*/
+
+    /* CONTACT PAGE */
+
+/*=========================
+
+=========================*/
+.contact_area{
+    padding: 60px 0;
+}
+.contact_area .contact_wrap .address{
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2)0px 7px 19px 0px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.contact_area .contact_wrap .address p{
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7280;
+}
+.contact_area .contact_wrap .form{
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2)0px 7px 19px 0px;
+    padding: 20px;
+}
+.contact_area .contact_wrap .form p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact_area .contact_wrap .form button {
+    background: #f6783a;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 25px;
+}
+.contact_area .contact_wrap .form form .form-group{
+    margin-bottom: 20px;
+}
+.contact_area .contact_wrap .form form .form-group label{
+    padding-bottom: 10px;
+}
+
+/*=========================
+
+=========================*/
+
+    /* LOGIN PAGE */
+
+/*=========================
+
+=========================*/
+.login_area{
+    padding: 60px 0;
+}
+.login_area .login_form .form {
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2)0px 7px 19px 0px;
+    padding: 40px 20px;
+}
+.login_area .login_form .form h4{
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    color: #6b7280;
+
+}
+.login_area .login_form .form p{
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 600;
+}
+.login_area .login_form .form form{
+    margin-top: 20px;
+}
+.login_area .login_form .form form .wrap_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.login_area .login_form .form form .form-group{
+    margin-bottom: 20px;
+}
+.login_area .login_form .form form .form-group label{
+    margin-bottom: 10px;
+}
+/*=========================
+
+=========================*/
+
+/* FORGETPASSWORD PAGE */
+
+/*=========================
+
+=========================*/
+.forgetpassword_area{
+    padding: 60px 0;
+}
+.forgetpassword_area .forgetpassword_form .form {
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2)0px 7px 19px 0px;
+    padding: 40px 20px;
+}
+.forgetpassword_area .forgetpassword_form .form h4{
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    color: #6b7280;
+}
+.forgetpassword_area .forgetpassword_form .form form {
+    margin-top: 20px;
+}
+.forgetpassword_area .forgetpassword_form .form form button{
+    width: 100%;
+    background: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+}
+.forgetpassword_area .forgetpassword_form .form form .form-group{
+    margin-bottom: 20px;
+}
+.forgetpassword_area .forgetpassword_form .form form .form-group label{
+    margin-bottom: 10px;
+}
+/*=========================
+
+=========================*/
+
+    /* REGISTER PAGE */
+
+/*=========================
+
+=========================*/
+.register_area{
+    padding: 60px 0;
+}
+.register_area .register_form .form {
+    background: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2)0px 7px 19px 0px;
+    padding: 40px 20px;
+}
+.register_area .register_form .form h4{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #6b7280;
+
+}
+.register_area .register_form .form p{
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 600;
+}
+.register_area .register_form .form form {
+    margin-top: 20px;
+}
+.register_area .register_form .form form .wrap_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.register_area .register_form .form form .form_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.register_area .register_form .form form .form-group{
+    margin-bottom: 20px;
+}
+.register_area .register_form .form form .form-group label{
+    margin-bottom: 10px;
+}
+/*=========================
+
+=========================*/
+
+    /* XYZ PAGE */
+
+/*=========================
+
+=========================*/
+.xyzpage_area{
+    padding: 60px 0;
+}
+.xyzpage_area .xyzpage_wrap p{
+    font-weight: 600;
+    color: #6b7280;
+    font-size: 16px;
+}
+
+/*=========================
+
+=========================*/
+
+    /* TERMS PAGE */
+
+/*=========================
+
+=========================*/
+.terms_area{
+    padding: 60px 0;
+}
+.terms_area .terms_wrap ul{
+    list-style-type: disc;
+}
+.terms_area .terms_wrap p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #6b7280;
 }
