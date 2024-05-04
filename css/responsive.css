@@ -1,0 +1,256 @@
+/*/ Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    
+}
+
+
+/*/ Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .nav-item .nav-link {
+        color: #FFFFFF !important;
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 20px;
+    }
+    
+    .offer_area .offer_part .offer_content .subscription {
+        border: 1px solid #18D2EF;
+        display: inline-block;
+        padding-right: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    .package_area .single_card .card .card-body a {
+        display: inline-block;
+        margin-left: 135px;
+    }
+    .testimonial_area .single_card .card .card-img {
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        top: -20%;
+        left: 50%;
+        transform: translateX(-13%);
+    }
+    
+}
+
+
+/*/ Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 15px;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        background: lightslategrey;
+    }
+    
+    .nav-item .nav-link{
+        color: #FFFFFF !important;
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .nav-item .nav-link.link {
+        color: #FFFFFF;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+    }
+    .package_area .single_card .card .card-body a {
+        display: inline-block;
+        margin-left: 0px;
+    }
+    .offer_area .offer_part .offer_content .subscription {
+        border: 1px solid #18D2EF;
+        display: inline-block;
+        padding-right: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: 225px;
+    }
+    .footer_area .footer_mid {
+        padding-top: 25px;
+    }
+    .footer_area .footer_left p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 15px;
+    }
+    .footer_area .footer_left p br{
+        display: none;
+    }
+    .footer_area .footer_mid h6 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .footer_area .footer_mid ul li {
+        line-height: 30px;
+    }
+    .footer_area .footer_mid ul {
+        padding: 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .footer_area .footer_right h6 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .footer_area .footer_right ul li i {
+        font-size: 20px;
+    }
+    .footer_area .footer_right ul li span {
+        margin-left: 15px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+}
+
+
+
+/*/ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .banner_area .banner_content {
+        padding: 110px 10px;
+    }
+    .package_area .single_card .card .card-body a {
+        display: inline-block;
+        margin-left: 0;
+        text-decoration: none;
+    }
+    .offer_area .offer_part .offer_content .subscription input {
+        border: none;
+        width: 100%;
+        padding: 10px 0;
+        padding-left: 20px;
+    }
+    .offer_area .offer_part .offer_content h4 {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .offer_area .offer_part .offer_content .subscription .default_btn {
+        display: none;
+    }
+    .offer_area .offer_part .offer_content .mobile.default_btn {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        background: lightslategrey;
+    }
+    .nav-item .nav-link {
+        color: #FFFFFF !important;
+        margin-left: 10px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .nav-item .nav-link.link {
+        color: #FFFFFF;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+    }
+    .banner_area .banner_content .btn_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    
+}
+
+
+
+/*/ Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .banner_area .banner_content {
+        padding: 110px 10px;
+    }
+    .package_area .single_card .card .card-body a {
+        display: inline-block;
+        margin-left: 0;
+        text-decoration: none;
+    }
+    .offer_area .offer_part .offer_content .subscription input {
+        border: none;
+        width: 100%;
+        padding: 10px 0;
+        padding-left: 20px;
+    }
+    .offer_area .offer_part .offer_content h4 {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .offer_area .offer_part .offer_content .subscription .default_btn {
+        display: none;
+    }
+    .offer_area .offer_part .offer_content .mobile.default_btn {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+        background: lightslategrey;
+    }
+    .nav-item .nav-link {
+        color: #FFFFFF !important;
+        margin-left: 10px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .nav-item .nav-link.link {
+        color: #FFFFFF;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+    }
+    .banner_area .banner_content .btn_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer_area .footer_left{
+        padding: 0 10px;
+    }
+    .footer_area .footer_mid{
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+    .footer_area .footer_right{
+        padding: 0 10px;
+    }
+}
