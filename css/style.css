@@ -205,6 +205,11 @@ h6 {
     padding: 80px 0;
 }
 
+.package_area .places .single_card{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+}
 .package_area .single_card{
     margin: 0 15px;
     margin-top: 20px;
@@ -467,6 +472,42 @@ h6 {
     margin-left: 10px;
     font-size: 15px;
     font-weight: 400;
+}
+/*=========================
+
+
+=========================*/
+
+    /* SIGN UP PAGE */
+
+/*=========================
+
+
+=========================*/
+.signup_area{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    background: #ffffff;
+    width: 30%;
+}
+.signup_area .singup_form h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    text-align: center;
+}
+.signup_area .singup_form form{
+    color: #727272;
+    text-align: center;
+}
+.signup_area .singup_form form .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.signup_area .singup_form form input{
+    width: 100%;
 }
 
 
