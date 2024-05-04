@@ -1,0 +1,709 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+button:focus {
+    outline: 0px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+.clr {
+    clear: both;
+}
+.default_btn {
+    background: #ffffff;
+    display: inline-block;
+    color: #000000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: crosshair;
+}
+
+
+
+
+
+/* section head style */
+
+.section_head {}
+
+.section_head h2 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 35px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.section_head p {
+    color: #0a0a0a;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+
+/* End of common CSS */
+
+/*=========================
+
+    01.HEADER AREA CSS
+
+=========================*/
+.header_area{
+    background: #fcf0ca;
+}
+.header_area .header_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.header_area .header_content .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000000;
+    padding-left: 40px;
+}
+.header_area .header_content .wrap i{
+    font-size: 18px;
+}
+.header_area .header_content .wrap i.fa-map-marker{
+    font-size: 25px;
+}
+.header_area .header_content .wrap span{
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+/*=========================
+
+    02.BANNER AREA CSS
+
+=========================*/
+.banner_area{
+    position: relative;
+}
+.banner_area .menu_bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+.banner_area .menu_bar .navbar {
+    padding: 0;
+}
+.banner_area .menu_bar .navbar .container-fluid button i{
+    color: #ffffff;
+}
+.banner_area .menu_bar .navbar button:focus:not(:focus-visible) {
+    outline: none;
+}
+.banner_area .menu_bar .navbar .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+.banner_area .menu_bar .navbar .navbar-nav{
+    background: #3d2f24;
+    align-items: center;
+}
+.banner_area .menu_bar .navbar .nav-item .nav-link{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 40px;
+}
+.banner_area .banner_bg{
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner_area .banner_bg .banner_content {
+    text-align: center;
+    padding: 155px 0;
+}
+.banner_area .banner_bg .banner_content h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-top: 50px;
+}
+.banner_area .banner_bg .banner_content p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding: 0 225px;
+    padding-bottom: 100px;
+}
+/*=========================
+
+    03.FARM AREA CSS
+
+=========================*/
+.farm_area {
+    padding-top: 60px;
+    background: #f7bd01;
+    position: relative;
+    padding-bottom: 280px;
+}
+.farm_area .farm_info {
+    position: absolute;
+    top: 200px;
+}
+.farm_area .farm_info .single_farm {
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffffff;
+    /* box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1); */
+    margin: 0 10px;
+}
+.farm_area .farm_info .farm_txt {
+    text-align: center;
+    padding: 15px;
+}
+.farm_area .farm_info .farm_txt h5 {
+    color: #000000;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.farm_area .farm_info .farm_txt h5{
+    color: #000000;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.farm_area .farm_info .farm_txt p{
+    color: #0a0a0a;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+/*=========================
+
+    04.FARM AREA CSS
+
+=========================*/
+.about_area {
+    padding-top: 100px;
+    background: #f4f2e3;
+}
+.about_area .section_head {
+    padding-top: 130px;
+}
+.about_area .section_head h2 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 45px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.about_area .section_head p {
+    color: #0a0a0a;
+    font-size: 12px;
+    margin: 0;
+    padding-right: 75px;
+    margin-top: 15px;
+}
+.about_area .about_icon_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.about_area .about_icon_wrap .single_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_area .about_icon_wrap .single_wrap p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+.about_area .about_img {
+    text-align: right;
+    width: 100%;
+}
+/*=========================
+
+    05.LAND AREA CSS
+
+=========================*/
+.land_area .land_bg{
+    background-image: url(../images/land-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.land_area .land_bg .section_head{
+    padding: 80px 0;
+}
+.land_area .land_bg .section_head h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.land_area .land_bg .section_head p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+}
+/*=========================
+
+    06.OFFER AREA CSS
+
+=========================*/
+.offer_area {
+    background: #f9f3e3;
+    padding: 80px;
+}
+.offer_area .offer_wrap {
+    padding-top: 50px;
+}
+.offer_area .offer_wrap .slick-slide img {
+    display: inline-block;
+}
+.offer_area .offer_wrap .single_offer {
+    text-align: center;
+}
+.offer_area .offer_wrap .single_offer .txt {
+    padding: 0 50px;
+    padding-top: 15px;
+}
+.offer_area .offer_wrap .single_offer .txt h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.offer_area .offer_wrap .single_offer .txt p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #000000;
+}
+.offer_area .offer_wrap .default_btn {
+    background: #f7bd01;
+    display: inline-block;
+    color: #000000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: crosshair;
+    margin-top: 30px;
+}
+/*=========================
+
+    07.PRODUCT AREA CSS
+
+=========================*/
+.product_area{
+    background: #eedbcc;
+}
+.product_area .single_product .product_txt_bg {
+    /* background-image: url(../images/product_bg-1.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.product_area .single_product .product_txt_bg .product_txt {
+    color: #000000;
+    padding: 50px 50px;
+}
+.product_area .single_product .product_txt h4{
+    font-weight: 500;
+    font-size: 34px;
+}
+.product_area .single_product .product_txt p{
+    font-size: 14px;
+    font-weight: 400;
+}
+/*=========================
+
+    08.SHOP AREA CSS
+
+=========================*/
+.shop_area{
+    background: #f3f3f3;
+    padding: 60px 0;
+}
+.shop_area .shop_wrap{
+    padding: 40px 0;
+    padding-bottom: 0;
+}
+.shop_area .shop_wrap .single_shop {
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.shop_area .shop_wrap .single_shop .shop_txt {
+    text-align: center;
+    color: #000000;
+    padding-top: 20px;
+}
+.shop_area .shop_wrap .single_shop .shop_txt h6 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.shop_area .shop_wrap .single_shop .shop_txt p {
+    color: #880000;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.shop_area .shop_wrap .single_shop .shop_txt button {
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+}
+.shop_area .shop_wrap .btw_wrap{
+    color: #ABABAB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+.shop_area .shop_wrap .btw_wrap i {
+    border: 1px solid #ABABAB;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 25px;
+}
+.shop_area .shop_wrap .btw_wrap i.fa-angle-left::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #ababab;
+    margin-right: 120px;
+}
+.shop_area .shop_wrap .btw_wrap i.fa-angle-right::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 1px;
+    background-color: #ababab;
+    margin-left: 120px;
+}
+/*=========================
+
+    09.FARMERS AREA CSS
+
+=========================*/
+.farmers_area{
+    padding-top: 50px;
+}
+.farmers_area .farmers_wrap .single_farmer{
+    text-align: center;
+    margin: 10px 0;
+}
+.farmers_area .farmers_wrap {
+    padding: 50px 0;
+}
+.farmers_area .farmers_wrap .slick-slide img {
+    display: inline-block;
+}
+.farmers_area .farmers_wrap .single_farmer .farmer_txt{
+    padding-top: 20px;
+}
+.farmers_area .farmers_wrap .single_farmer .farmer_txt h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.farmers_area .farmers_wrap .single_farmer .farmer_txt p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c6c6c;
+    margin: 0;
+}
+
+/*=========================
+
+    10.CLIENT AREA CSS
+
+=========================*/
+.client_area .client_bg .section_head{
+    padding-top: 50px;
+}
+.client_area .client_bg{
+    background-image: url(../images/clint-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.client_area .client_bg .client_wrap .single_client {
+    padding: 20px 0px;
+}
+.client_area .client_bg .client_wrap .single_client .client_info h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+    padding-top: 10px;
+}
+.client_area .client_bg .client_wrap .single_client .client_info span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #6c6c6c;
+}
+.client_area .client_bg .client_wrap .single_client .client_info p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #0a0a0a;
+    margin: 0;
+    padding: 0 300px;
+    padding-top: 10px;
+}
+.client_area .client_bg .client_wrap .slick-slide img {
+    display: inline-block;
+}
+.client_area .client_bg .client_wrap .slick-dots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.client_area .client_bg .client_wrap .slick-dots li{
+    display: inline-block;
+    list-style: none;
+    width: 15px;
+    height: 5px;
+    background: #717171;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: all .5s linear;
+}
+.client_area .client_bg .client_wrap .slick-dots li.slick-active{
+    width: 32px;
+    height: 5px;
+    transition: all .5s linear;
+}
+.client_area .client_bg .client_wrap .slick-dots li button{
+    display: none;
+}
+.client_area .client_bg .client_wrap{
+    padding-bottom: 20px;
+}
+
+/*=========================
+
+    11.BLOG AREA CSS
+
+=========================*/
+.blog_area {
+    background: #997d61;
+    padding: 60px 0;
+}
+.blog_area .section_head h2{
+    color: #ffffff;
+}
+.blog_area .section_head h2::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    /* margin-left: 120px; */
+    /* bottom: 0; */
+    /* right: 0; */
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.blog_area .section_head p{
+    color: #ffffff;
+}
+.blog_area .blog_wrap{
+    margin-top: 30px;
+}
+.blog_area .blog_wrap .single_blog{
+    margin: 0 10px;
+}
+.blog_area .blog_wrap .single_blog span{
+    font-size: 13px;
+    font-weight: 400;
+}
+.blog_area .blog_wrap .single_blog p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+/*=========================
+
+    12.FOOTER AREA CSS
+
+=========================*/
+.footer_area{
+    background: #ede0d7;
+    color: #000000;
+    padding-top: 60px;
+}
+.footer_area .footer_left p {
+    font-size: 13px;
+    font-weight: 400;
+    padding-right: 50px;
+}
+.footer_area .footer_left span {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+}
+.footer_area .footer_left .call{
+    margin-top: 30px;
+}
+.footer_area .footer_mid p {
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.footer_area .footer_mid ul{
+    padding: 0;
+    margin: 0;
+}
+.footer_area .footer_mid ul li {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+.footer_area .footer_right p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.footer_area .footer_right span{
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+}
+.footer_area .footer_right .mail {
+    font-size: 13px;
+    font-weight: 400;
+    background: #ffffff;
+    display: inline-block;
+    padding: 5px 10px;
+    color: #808080;
+    margin-top: 10px;
+}
+.footer_area .footer_right .mail input{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    color: #808080;
+}
+.footer_area .footer_right .social_links {
+    color: #6c6c6c;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.footer_area .footer_right .social_links a{
+    text-decoration: none;
+    color: #808080;
+}
+.footer_area .footer_right .social_links i{
+    margin-right: 10px;
+}
+.footer_area .cc_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151;
+    padding-bottom: 20px;
+}
+.footer_area .cc_wrap a{
+    text-decoration: none;
+    color: #515151;
+}
+.footer_area .marks {
+    width: 100%;
+    height: 1px;
+    background: #c2c2c2;
+    margin: 20px 0;
+}

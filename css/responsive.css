@@ -1,0 +1,428 @@
+/*/ Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+/*/ Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .client_area .client_bg .client_wrap .single_client .client_info p {
+        font-size: 13px;
+        font-weight: 400;
+        color: #0a0a0a;
+        margin: 0;
+        padding: 0 200px;
+        padding-top: 10px;
+    }
+}
+
+
+/*/ Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .banner_area .menu_bar .navbar {
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    .banner_area .menu_bar .navbar .navbar-nav {
+        background: #3d2f24;
+        align-items: start;
+    }
+
+    .header_area .header_content .wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #000000;
+        padding-left: 15px;
+    }
+
+    .banner_area .banner_bg .banner_content h1 {
+        font-weight: 700;
+        font-size: 50px;
+        margin: 0;
+        padding-bottom: 25px;
+        padding-top: 0;
+    }
+
+    .banner_area .banner_bg .banner_content p {
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+        padding: 0 25px;
+        padding-bottom: 40px;
+    }
+
+    .about_area .section_head {
+        padding-top: 0;
+    }
+
+    .about_area {
+        padding-top: 0;
+        background: #f4f2e3;
+    }
+
+    .about_area .row {
+        flex-direction: column-reverse;
+    }
+
+    .about_area .about_icon_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .client_area .client_bg .client_wrap .single_client .client_info p {
+        font-size: 13px;
+        font-weight: 400;
+        color: #0a0a0a;
+        margin: 0;
+        padding: 0 90px;
+        padding-top: 10px;
+    }
+
+    .footer_mid {
+        margin-top: 25px;
+    }
+
+    .footer_right {
+        margin-top: 25px;
+    }
+
+    .farm_info_slick {
+        margin-top: 20px;
+    }
+
+    .product_area .single_product .product_txt_bg .product_txt {
+        color: #000000;
+        padding: 50px 50px;
+        padding-left: 0;
+    }
+}
+
+
+
+/*/ Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .product_area .single_product .product_txt_bg .product_txt {
+        color: #000000;
+        padding: 50px 50px;
+        padding-left: 0;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .header_area {
+        background: #fcf0ca;
+        padding: 10px 0;
+        padding-top: 0;
+    }
+
+    .header_area .logo {
+        text-align: center;
+    }
+
+    .banner_area .menu_bar .navbar {
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    .banner_area .menu_bar .navbar .navbar-nav {
+        background: #3d2f24;
+        align-items: start;
+    }
+
+    .header_area .header_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header_area .header_content .wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #000000;
+        padding-left: 0;
+    }
+
+    .banner_area .banner_bg .banner_content h1 {
+        font-weight: 700;
+        font-size: 50px;
+        margin: 0;
+        padding-bottom: 25px;
+        padding-top: 0;
+    }
+
+    .banner_area .banner_bg .banner_content p {
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+        padding: 0 25px;
+        padding-bottom: 40px;
+    }
+
+    .about_area .section_head {
+        padding-top: 0;
+    }
+
+    .about_area {
+        padding-top: 80px;
+        background: #f4f2e3;
+    }
+
+    .about_area .row {
+        flex-direction: column-reverse;
+    }
+
+    .about_area .about_icon_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .client_area .client_bg .client_wrap .single_client .client_info p {
+        font-size: 13px;
+        font-weight: 400;
+        color: #0a0a0a;
+        margin: 0;
+        padding: 0 15px;
+        padding-top: 10px;
+    }
+
+    .footer_mid {
+        margin-top: 25px;
+    }
+
+    .footer_right {
+        margin-top: 25px;
+    }
+
+    .farm_info_slick {
+        margin-top: 20px;
+    }
+
+    .farm_area .farm_info .single_farm {
+        padding: 10px;
+        border-radius: 5px;
+        background: #ffffff;
+        /* box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1); */
+        margin: 0 10px;
+        /* margin-top: 20px; */
+    }
+
+    .farm_area .farm_info {
+        position: absolute;
+        top: 135px;
+    }
+
+    .footer_area .cc_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 400;
+        color: #515151;
+        padding-bottom: 20px;
+    }
+
+    .footer_area .cc_wrap a {
+        text-decoration: none;
+        color: #515151;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/*/ Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .product_area .single_product .product_txt_bg .product_txt {
+        color: #000000;
+        padding: 50px 50px;
+        padding-left: 0;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+        display: flex;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .header_area {
+        background: #fcf0ca;
+        padding: 10px 0;
+        padding-top: 0;
+    }
+
+    .header_area .logo {
+        text-align: center;
+    }
+
+    .banner_area .menu_bar .navbar {
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    .banner_area .menu_bar .navbar .navbar-nav {
+        background: #3d2f24;
+        align-items: start;
+    }
+
+    .header_area .header_content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header_area .header_content .wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #000000;
+        padding-left: 0;
+    }
+
+    .banner_area .banner_bg .banner_content h1 {
+        font-weight: 700;
+        font-size: 50px;
+        margin: 0;
+        padding-bottom: 25px;
+        padding-top: 0;
+    }
+
+    .banner_area .banner_bg .banner_content p {
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+        padding: 0 25px;
+        padding-bottom: 40px;
+    }
+
+    .about_area .section_head {
+        padding-top: 0;
+    }
+
+    .about_area {
+        padding-top: 0;
+        background: #f4f2e3;
+    }
+
+    .about_area .row {
+        flex-direction: column-reverse;
+    }
+
+    .about_area .about_icon_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .about_area .about_img img{
+        text-align: right;
+        width: 100%;
+    }
+
+    .client_area .client_bg .client_wrap .single_client .client_info p {
+        font-size: 13px;
+        font-weight: 400;
+        color: #0a0a0a;
+        margin: 0;
+        padding: 0 15px;
+        padding-top: 10px;
+    }
+
+    .footer_mid {
+        margin-top: 25px;
+    }
+
+    .footer_right {
+        margin-top: 25px;
+    }
+
+    .farm_info_slick {
+        margin-top: 20px;
+    }
+
+    .farm_area .farm_info .single_farm {
+        padding: 10px;
+        border-radius: 5px;
+        background: #ffffff;
+        /* box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1); */
+        margin: 0 10px;
+        /* margin-top: 20px; */
+    }
+
+    .farm_area .farm_info {
+        position: static;
+        top: 0;
+    }
+    .farm_area {
+        padding-top: 60px;
+        background: #f7bd01;
+        position: static;
+        padding-bottom: 25px;
+    }
+
+    .footer_area .cc_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        font-weight: 400;
+        color: #515151;
+        padding-bottom: 20px;
+    }
+
+    .footer_area .cc_wrap a {
+        text-decoration: none;
+        color: #515151;
+        margin-bottom: 10px;
+    }
+}
