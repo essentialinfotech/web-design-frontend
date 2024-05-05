@@ -97,6 +97,7 @@ h6 {
     left: 0;
     width: 100%;
     padding: 20px 105px;
+    z-index: 9;
 }
 .nav-item .nav-link{
     color: #FFFFFF !important;
@@ -484,30 +485,160 @@ h6 {
 
 
 =========================*/
-.signup_area{
+.filter {
+    filter: blur(3.5px);
+    pointer-events: none;
+  }
+.signup_area {
+
+}
+.signup_area .singup_form {
+    padding: 25px 30px;
     position: absolute;
-    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15%;
+    left: 0;
+    right: 0;
     z-index: 99;
     background: #ffffff;
     width: 30%;
+    border-radius: 5px;
 }
-.signup_area .singup_form h2{
+.signup_area .singup_form h2 {
     font-size: 16px;
     font-weight: 400;
     color: #727272;
     text-align: center;
+    margin-bottom: 20px;
 }
 .signup_area .singup_form form{
     color: #727272;
     text-align: center;
 }
-.signup_area .singup_form form .wrap{
+.signup_area .singup_form form a.forgot {
+    text-decoration: none;
+    color: #727272;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+.signup_area .singup_form form p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #727272;
+    padding-top: 5px;
+    margin: 0;
+}
+.signup_area .singup_form form p.gap_or {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    background: #ffffff;
+    display: inline-block;
+    padding: 0 8px;
+    position: relative;
+    margin: 15px;
+}
+.signup_area .singup_form form p.gap_or::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: #b9b9b9;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+.signup_area .singup_form form p a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #18d2ef;
+}
+.signup_area .singup_form form button{
+    width: 100%;
+    background: #18d2ef;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.signup_area .singup_form form .wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border: 1px solid #727272;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.signup_area .singup_form form .wrap i{
+    padding-right: 10px;
 }
 .signup_area .singup_form form input{
     width: 100%;
+    border: none;
+}
+.signup_area .singup_form form .social_wrap i{
+    margin: 0 10px;
+    font-size: 18px;
+}
+/*=========================
+
+
+=========================*/
+
+    /* CONTACT PAGE */
+
+/*=========================
+
+
+=========================*/
+.contact_area h2{
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.contact_area form {
+    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-top: 80px;
+}
+.contact_area form .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_area form .wrap input {
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+}
+.contact_area form textarea{
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+}
+.contact_area form button {
+    background: #18d2ef;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
 }
 
 

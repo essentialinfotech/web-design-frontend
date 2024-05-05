@@ -118,6 +118,19 @@
         font-size: 18px;
         font-weight: 400;
     }
+    .signup_area .singup_form {
+        padding: 25px 30px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 15%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: #ffffff;
+        width: 40%;
+        border-radius: 5px;
+    }
     
 }
 
@@ -180,7 +193,33 @@
         flex-direction: row;
         align-items: center;
     }
-    
+    .contact_area form .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact_area form .wrap input {
+        margin-bottom: 20px;
+        background: #f4f4f4;
+        border: none;
+        padding: 10px 15px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .signup_area .singup_form {
+        padding: 25px 30px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 15%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: #ffffff;
+        width: 80%;
+        border-radius: 5px;
+    }
     
 }
 
@@ -252,5 +291,32 @@
     }
     .footer_area .footer_right{
         padding: 0 10px;
+    }
+    .contact_area form .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact_area form .wrap input {
+        margin-bottom: 20px;
+        background: #f4f4f4;
+        border: none;
+        padding: 10px 15px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .signup_area .singup_form {
+        padding: 25px 30px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        top: 15%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background: #ffffff;
+        width: 80%;
+        border-radius: 5px;
     }
 }
