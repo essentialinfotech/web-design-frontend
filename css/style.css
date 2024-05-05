@@ -92,6 +92,14 @@ h6 {
 }
 
 
+.section_head p {
+    color: #3e3e3e;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 60px;
+}
+
+
 
 
 /* End of common CSS */
@@ -149,6 +157,11 @@ h6 {
     font-weight: 400;
 }
 
+.header_area .log a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .header_area .log span {
     padding-left: 10px;
     text-transform: uppercase;
@@ -170,10 +183,17 @@ h6 {
 a.nav-link {
     margin-left: 20px;
     color: #FFFFFF !important;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
+
+a.nav-link:hover {
+    color: #F3EB34 !important;
+    transition: all .5s linear;
 }
 
 a.nav-link.active {
-    color: #F3EB34 !important;
+    border-bottom: 2px solid #F3EB34;
 }
 
 ul.navbar-nav {
@@ -408,21 +428,48 @@ ul.navbar-nav {
     transition: all .5s linear;
 }
 
+.best_area .card_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.best_area .card_title h4{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+.best_area .card_title h4::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #c5a46e;
+    z-index: 9;
+}
 .best_area .single_card .card {
     border: none;
     border-radius: 0;
 }
+
 .best_area .single_card {
+    margin-bottom: 25px;
+}
+.best_area .bestroom_slider .single_card {
     margin: 0 15px;
 }
-.best_area .single_card .star_wrap{
+
+.best_area .single_card .star_wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .best_area .single_card .star_wrap img {
-	margin-left: 5px;
-	width: 15px;
+    margin-left: 5px;
+    width: 15px;
 }
 
 .best_area .single_card .card_head {
@@ -479,7 +526,8 @@ ul.navbar-nav {
     padding: 5px 10px;
     margin: 0 15px;
 }
-.best_area .view_wrap button{
+
+.best_area .view_wrap button {
     text-decoration: none;
     border: none;
     background: transparent;
@@ -617,15 +665,20 @@ ul.navbar-nav {
 .nav-tabs {
     border-bottom: 0;
 }
-.service_area{
+
+.service_area {
     padding-top: 50px;
     padding-bottom: 80px;
 }
-.service_area .service_content{}
+
+.service_area .service_content {}
+
 .service_area .service_content .fade:not(.show) {
     display: none !important;
 }
-.service_area .service_content .list{}
+
+.service_area .service_content .list {}
+
 .service_area .service_content .list ul {
     margin: 0;
     padding: 0;
@@ -633,6 +686,7 @@ ul.navbar-nav {
     flex-direction: row;
     justify-content: space-around;
 }
+
 .service_area .service_content .list ul li button {
     color: #000000;
     font-size: 15px;
@@ -645,42 +699,51 @@ ul.navbar-nav {
     border-radius: 0;
     text-decoration: none;
 }
-.service_area .service_content .list ul li button:hover{
+
+.service_area .service_content .list ul li button:hover {
     background: #c5a46e;
     color: #ffffff;
     transition: all .2s linear;
 }
-.service_area .service_content .wrap_content{
+
+.service_area .service_content .wrap_content {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.service_area .service_content .wrap_content .content_img{
+
+.service_area .service_content .wrap_content .content_img {
     width: 50%;
 }
+
 .service_area .service_content .wrap_content .content_txt {
     background: #0D0C0C;
     width: 50%;
     padding: 40px 30px;
 }
-.service_area .service_content .wrap_content .content_txt h6{
+
+.service_area .service_content .wrap_content .content_txt h6 {
     font-size: 13px;
     font-weight: 300;
     text-transform: uppercase;
 }
-.service_area .service_content .wrap_content .content_txt h2{
+
+.service_area .service_content .wrap_content .content_txt h2 {
     font-size: 22px;
     font-weight: 400;
     text-transform: uppercase;
 }
-.service_area .service_content .wrap_content .content_txt h2 span{
+
+.service_area .service_content .wrap_content .content_txt h2 span {
     color: #c5a46e;
 }
-.service_area .service_content .wrap_content .content_txt p{
+
+.service_area .service_content .wrap_content .content_txt p {
     font-size: 14px;
     font-weight: 400;
 }
-.service_area .service_content .wrap_content .content_txt .default_btn{
+
+.service_area .service_content .wrap_content .content_txt .default_btn {
     background: #c5a46e;
 }
 
@@ -689,21 +752,24 @@ ul.navbar-nav {
     09.TESTIMONIALS AREA CSS
 
 =========================*/
-.testimonial_area{
+.testimonial_area {
     padding-top: 50px;
     padding-bottom: 80px;
 }
-.testimonial_area .wrap_content{
+
+.testimonial_area .wrap_content {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.testimonial_area .wrap_content ul{
+
+.testimonial_area .wrap_content ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0;
 }
+
 .testimonial_area .wrap_content ul li {
     list-style: none;
     width: 11px;
@@ -713,26 +779,31 @@ ul.navbar-nav {
     background: transparent;
     margin: 0 6px;
 }
+
 .testimonial_area .wrap_content ul li.slick-active {
     background: #c5a46e;
     border: 2px solid #c5a46e;
 }
-.testimonial_area .wrap_content ul li button{
+
+.testimonial_area .wrap_content ul li button {
     display: none;
 }
+
 .testimonial_area .wrap_content .client_txt {
     text-align: center;
     width: 50%;
     background: #0D0C0C;
     padding: 29px 70px;
 }
-.testimonial_area .wrap_content .client_txt p{
+
+.testimonial_area .wrap_content .client_txt p {
     font-size: 12px;
     font-weight: 400;
     margin: 0;
     padding: 20px 0;
 }
-.testimonial_area .wrap_content .client_txt h4{
+
+.testimonial_area .wrap_content .client_txt h4 {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
@@ -740,7 +811,8 @@ ul.navbar-nav {
     margin: 0;
     padding-bottom: 10px;
 }
-.testimonial_area .wrap_content .client_txt h6{
+
+.testimonial_area .wrap_content .client_txt h6 {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
@@ -748,10 +820,11 @@ ul.navbar-nav {
     padding-bottom: 20px;
 }
 
-.testimonial_area .wrap_content .client_img{
+.testimonial_area .wrap_content .client_img {
     width: 50%;
 }
-.slick-slide img{
+
+.slick-slide img {
     display: inline-block;
 }
 
@@ -760,15 +833,17 @@ ul.navbar-nav {
     10.BLOG AREA CSS
 
 =========================*/
-.blog_area{
+.blog_area {
     padding-top: 50px;
     padding-bottom: 80px;
 }
-.blog_area .single_blog .card{
+
+.blog_area .single_blog .card {
     border: 1px solid #d5d5d5;
     margin: 0 15px;
 }
-.blog_area .single_blog .cmt_wrap{
+
+.blog_area .single_blog .cmt_wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -778,7 +853,8 @@ ul.navbar-nav {
     font-size: 14px;
     font-weight: 400;
 }
-.blog_area .single_blog .card-body h6{
+
+.blog_area .single_blog .card-body h6 {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -786,27 +862,30 @@ ul.navbar-nav {
     margin: 0;
     padding-bottom: 10px;
 }
-.blog_area .single_blog .card-body p{
+
+.blog_area .single_blog .card-body p {
     font-size: 12px;
     font-weight: 400;
     color: #323232;
     margin: 0;
     padding-bottom: 5px;
 }
-.blog_area .single_blog .card-body a{
+
+.blog_area .single_blog .card-body a {
     text-decoration: none;
     color: #c5a46e;
     font-size: 12px;
     font-weight: 500;
 }
 
-.blog_area ul{
+.blog_area ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 0;
     margin-top: 20px;
 }
+
 .blog_area ul li {
     list-style: none;
     width: 11px;
@@ -816,14 +895,17 @@ ul.navbar-nav {
     background: transparent;
     margin: 0 6px;
 }
+
 .blog_area ul li.slick-active {
     background: #c5a46e;
     border: 2px solid #c5a46e;
 }
-.blog_area ul li button{
+
+.blog_area ul li button {
     display: none;
 }
-.blog_area .blog_icon{
+
+.blog_area .blog_icon {
     text-align: center;
     margin-top: 30px;
 }
@@ -833,17 +915,19 @@ ul.navbar-nav {
     11.FOOTER AREA CSS
 
 =========================*/
-.footer_area{
+.footer_area {
     text-align: center;
 }
-.footer_area .footer_bg{
+
+.footer_area .footer_bg {
     background-image: url("../images/footer_banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-.footer_area .footer_bg h6{
+
+.footer_area .footer_bg h6 {
     font-size: 14px;
     font-weight: 400;
     color: #c5a46e;
@@ -852,21 +936,24 @@ ul.navbar-nav {
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.footer_area .footer_bg h4{
+
+.footer_area .footer_bg h4 {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 40px;
 }
-.footer_area .footer_bg .email{
+
+.footer_area .footer_bg .email {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
-.footer_area .footer_bg .email input{
+
+.footer_area .footer_bg .email input {
     border: none;
     border: 1px solid #ffffff;
     border-right: none;
@@ -874,61 +961,268 @@ ul.navbar-nav {
     padding: 5px 15px;
     width: 350px;
 }
-.footer_area .footer_bg .email input::placeholder{
+
+.footer_area .footer_bg .email input::placeholder {
     text-transform: uppercase;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
 }
-.footer_area .footer_bg .email .default_btn{
+
+.footer_area .footer_bg .email .default_btn {
     background: #c5a46e;
     padding: 8px 30px;
 }
 
-.footer_area .footer_bg .policy{
+.footer_area .footer_bg .policy {
     font-size: 14px;
     font-weight: 400;
     color: #c5a46e;
     margin: 0;
     margin-bottom: 80px;
 }
-.footer_area .footer_bg .logo{
+
+.footer_area .footer_bg .logo {
     margin-bottom: 30px;
 }
 
-.footer_area .footer_bg .address_wrap{
+.footer_area .footer_bg .address_wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 20px;
 }
-.footer_area .footer_bg .address_wrap p{
+
+.footer_area .footer_bg .address_wrap p {
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
 }
-.footer_area .footer_bg .social_wrap{
+
+.footer_area .footer_bg .social_wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
 }
-.footer_area .footer_bg .social_wrap i{
+
+.footer_area .footer_bg .social_wrap i {
     padding: 0 15px;
 }
-.footer_area .footer_bg .bar{
+
+.footer_area .footer_bg .bar {
     width: 100%;
     height: 1px;
     background: #797979;
 }
 
-.footer_area .footer_bg .credit{
+.footer_area .footer_bg .credit {
     font-size: 14px;
     font-weight: 300;
     padding: 30px 0;
 }
-.footer_area .footer_bg .credit span{
+
+.footer_area .footer_bg .credit span {
     color: #c5a46e;
+}
+
+/*=========================
+
+
+=========================*/
+
+/* SIGN UP PAGE */
+
+/*=========================
+
+
+=========================*/
+.filter {
+    pointer-events: none;
+}
+
+.signup_area {}
+
+.signup_area .singup_form {
+
+    padding: 25px 30px;
+    position: absolute;
+    top: 30%;
+    z-index: 99;
+    background: #ffffff;
+    width: 30%;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.signup_area .singup_form h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup_area .singup_form form {
+    color: #ffffff;
+    text-align: center;
+}
+
+.signup_area .singup_form form a.forgot {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.signup_area .singup_form form p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.signup_area .singup_form form p.gap_or {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    background: #ffffff;
+    display: inline-block;
+    padding: 0 8px;
+    position: relative;
+    margin: 15px;
+}
+
+.signup_area .singup_form form p.gap_or::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: #b9b9b9;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+.signup_area .singup_form form p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.signup_area .singup_form form button {
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #145677;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.signup_area .singup_form form .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #727272;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.signup_area .singup_form form .wrap i {
+    padding-right: 10px;
+}
+
+.signup_area .singup_form form input {
+    width: 100%;
+    border: none;
+    background: transparent;
+}
+
+.signup_area .singup_form form input::placeholder {
+    color: #ffffff;
+}
+
+.signup_area .singup_form form .social_wrap i {
+    margin: 0 10px;
+    font-size: 18px;
+}
+/*=========================
+
+
+=========================*/
+
+/* EVENT PAGE */
+
+/*=========================
+
+
+=========================*/
+.event_area{
+    padding: 50px 0;
+}
+.event_area .single_event{
+    margin-bottom: 20px;
+}
+/*=========================
+
+
+=========================*/
+
+/* CONTACT PAGE */
+
+/*=========================
+
+
+=========================*/
+.contact_area h4{
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.contact_area form {
+    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-top: 80px;
+}
+.contact_area form .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_area form .wrap input {
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+}
+.contact_area form textarea{
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+}
+.contact_area form button {
+    background: #18d2ef;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
 }

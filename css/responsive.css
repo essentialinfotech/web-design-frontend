@@ -267,6 +267,12 @@
         border-radius: 0;
         margin-bottom: 25px;
     }
+    .best_area .section_head p {
+        color: #3e3e3e;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0 10px;
+    }
 }
 
 
