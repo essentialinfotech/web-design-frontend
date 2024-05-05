@@ -502,6 +502,7 @@ ul.navbar-nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .package_area .package_bg .package_content {
@@ -840,6 +841,7 @@ ul.navbar-nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .footer_area .footer_bg h6{
     font-size: 14px;
