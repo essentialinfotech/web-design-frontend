@@ -1187,17 +1187,18 @@ ul.navbar-nav {
 
 
 =========================*/
+.contact_area{
+    padding: 60px 0;
+    padding-bottom: 0;
+}
 .contact_area h4{
-    text-align: center;
+    text-align: left;
     color: #000000;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 500;
-    margin-bottom: 50px;
 }
 .contact_area form {
-    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1);
-    padding: 50px;
-    margin-top: 80px;
+    text-align: center;
 }
 .contact_area form .wrap{
     display: flex;
@@ -1217,12 +1218,282 @@ ul.navbar-nav {
     padding: 10px 15px;
 }
 .contact_area form button {
-    background: #18d2ef;
+    background: #c5a46e;
     border: none;
     color: #ffffff;
     font-size: 16px;
     font-weight: 400;
-    border-radius: 5px;
     padding: 5px 10px;
     margin-top: 20px;
+}
+.contact_area .contact_info h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #040404;
+}
+.contact_area .contact_info p{
+    color: #a4a4a4;
+    font-size: 13px;
+    font-weight: 400;
+}
+.contact_area .contact_info .wrap h6 span{
+    padding-right: 20px;
+}
+.contact_area .contact_info .wrap p{
+    padding-left: 40px;
+}
+.contact_area .map{
+    margin-top: 60px;
+}
+/*=========================
+
+
+=========================*/
+
+/* RESERVATION PAGE */
+
+/*=========================
+
+
+=========================*/
+.reserve_area {
+    padding: 60px 0;
+}
+.reserve_area .wrap_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #0b0b0b;
+    font-size: 16px;
+    font-weight: 500;
+}
+.reserve_area .wrap_nav .border_e {
+    border: 1px solid #787878;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+.reserve_area .wrap_nav span{
+    padding-right: 10px;
+}
+.reserve_area .wrap_nav p{
+    margin: 0;
+}
+.reserve_area .wrap_nav button {
+    background: transparent;
+    border: none;
+    color: #0b0b0b;
+    padding: 0;
+    font-size: 15px;
+}
+.reserve_area .filter_side {
+    padding: 20px 20px;
+    border: 1px solid #999999;
+}
+.reserve_area .filter_side .budget_wrap .slider{
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+.reserve_area .filter_side .budget_wrap .slider .progress{
+    height: 5px;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    border-radius: 5px;
+    background: #17a2b8;
+}
+.reserve_area .filter_side .budget_wrap .range-input{
+    position: relative;
+}
+.reserve_area .filter_side .budget_wrap .range-input input{
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+}
+.reserve_area .filter_side .budget_wrap .range-input input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    background: #17a2b8;
+}
+.reserve_area .filter_side .budget_wrap .range-input input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    -moz-appearance: none;
+    background: #17a2b8;
+}
+.reserve_area .filter_side .budget_wrap {
+    color: #000000;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #999999;
+}
+.reserve_area .filter_side .budget_wrap p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.reserve_area .filter_side .budget_wrap p span {
+    color: #5d5d5d;
+}
+.reserve_area .filter_side .budget_wrap .price-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.reserve_area .filter_side .budget_wrap .price-input .field {
+    display: ruby;
+}
+.reserve_area .filter_side .budget_wrap .price-input .field input{
+    width: 50%;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+.reserve_area .filter_side .pop_filter{
+    color: #000000;
+    padding-top: 30px;
+}
+.reserve_area .filter_side .pop_filter h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.reserve_area .filter_side .pop_filter.border_bottom{
+    border-bottom: 1px solid #999999;
+}
+.reserve_area .filter_side .pop_filter ul {
+    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.reserve_area .filter_side .pop_filter ul li{
+    font-size: 13px;
+    font-weight: 400;
+}
+.reserve_area .filter_side .pop_filter ul li .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.reserve_area .reservation_wrap .single_reservation{
+    margin-top: 30px;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_img{
+    display: inline-block;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_info h4 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_info p{
+    color: #6a6a6a;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_info span{
+    color: #c5a46e;
+    font-size: 13px;
+    font-weight: 400;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_img img{
+    width: 100%;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book{
+    text-align: right;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .star_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .price {
+    padding: 10px 0;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .price p{
+    color: #c5a46e;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .price span{
+    color: #797979;
+    font-size: 12px;
+    font-weight: 400;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .default_btn{
+    background: #c5a46e;
+}
+/*=========================
+
+
+=========================*/
+
+/* ABOUT PAGE */
+
+/*=========================
+
+
+=========================*/
+.abour_page_part {
+    padding: 50px 0;
+}
+.abour_page_part .txt {
+    padding: 20px 58px;
+}
+.abour_page_part .txt span{
+    color: #525252;
+    font-size: 13px;
+    font-weight: 400;
+}
+.abour_page_part .txt h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: #0d0c0c;
+}
+.abour_page_part .txt p{
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/*=========================
+
+        RESORT PART
+
+=========================*/
+
+.resort_area {
+    padding: 50px 0;
+}
+.resort_area .report_info .resort_list .wrap i{
+    color: #c5a46e;
+}
+.resort_area .report_info .resort_list .wrap p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #989898;
+    text-decoration: underline;
+    display: inline-block;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 5px;
 }

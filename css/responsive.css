@@ -273,6 +273,39 @@
         font-weight: 400;
         padding: 0 10px;
     }
+    .reserve_area .reservation_wrap .single_reservation .reservation_book .star_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .reserve_area .reservation_wrap .single_reservation .reservation_book {
+        text-align: right;
+        margin-top: 10px;
+    }
+    .reserve_area .wrap_nav button {
+        background: transparent;
+        border: none;
+        color: #0b0b0b;
+        padding: 0;
+        font-size: 12px;
+    }
+    .reserve_area .wrap_nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #0b0b0b;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .abour_page_part .txt {
+        padding: 20px 58px;
+        padding-left: 0;
+    }
+    .resort_area .report_info .resort_list {
+        padding-bottom: 50px;
+    }
 }
 
 
@@ -535,6 +568,55 @@
     }
     .testimonial_area .wrap_content .client_img {
         width: 100%;
+    }
+    .reserve_area .reservation_wrap .single_reservation .reservation_book .star_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .reserve_area .reservation_wrap .single_reservation .reservation_book {
+        text-align: right;
+        margin-top: 10px;
+    }
+    .reserve_area .wrap_nav button {
+        background: transparent;
+        border: none;
+        color: #0b0b0b;
+        padding: 0;
+        font-size: 12px;
+    }
+    .reserve_area .wrap_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #0b0b0b;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .reserve_area .wrap_nav .border_e {
+        border: 1px solid #787878;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .abour_page_part .txt {
+        padding: 20px 58px;
+        padding-left: 0;
+    }
+    .resort_area .report_info .resort_list {
+        padding-bottom: 50px;
+    }
+    .resort_area {
+        padding: 50px 0;
+        padding-top: 0;
+    }
+    .resort_area .section_head p {
+        color: #3e3e3e;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0 20px;
     }
 }
 
@@ -833,5 +915,62 @@
     }
     .float_info .wrap .left_content{
         padding-left: 15%;
+    }
+    .reserve_area .reservation_wrap .single_reservation .reservation_book .star_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+    .reserve_area .reservation_wrap .single_reservation .reservation_book {
+        text-align: left;
+        margin-top: 10px;
+    }
+    .reserve_area .wrap_nav button {
+        background: transparent;
+        border: none;
+        color: #0b0b0b;
+        padding: 0;
+        font-size: 12px;
+    }
+    .reserve_area .wrap_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #0b0b0b;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .reserve_area .wrap_nav .border_e {
+        border: 1px solid #787878;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .reserve_area .reservation_wrap .single_reservation .reservation_info h4 {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .abour_page_part .txt {
+        padding: 20px 58px;
+        padding-left: 0;
+    }
+    .resort_area .report_info .resort_list {
+        padding-bottom: 50px;
+    }
+    .resort_area {
+        padding: 50px 0;
+        padding-top: 0;
+    }
+    .resort_area .section_head p {
+        color: #3e3e3e;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0 20px;
     }
 }
