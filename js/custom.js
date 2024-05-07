@@ -1,4 +1,16 @@
 $(function () {
+    $(document).ready(function() {
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+      
+          // Add or remove the "sticky" class based on scroll position
+          if (scroll >= 700) {
+            $('.menubar').addClass('sticky');
+          } else {
+            $('.menubar').removeClass('sticky');
+          }
+        });
+      });
     // news slider
     $('.bestroom_slider').slick({
       slidesToShow: 3,
