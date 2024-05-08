@@ -46,7 +46,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: #000000;
         padding-left: 15px;
     }
 
@@ -72,7 +71,6 @@
 
     .about_area {
         padding-top: 0;
-        background: #f4f2e3;
     }
 
     .about_area .row {
@@ -110,7 +108,6 @@
     }
 
     .product_area .single_product .product_txt_bg .product_txt {
-        color: #000000;
         padding: 50px 50px;
         padding-left: 0;
     }
@@ -121,7 +118,6 @@
 /*/ Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     .product_area .single_product .product_txt_bg .product_txt {
-        color: #000000;
         padding: 50px 50px;
         padding-left: 0;
     }
@@ -141,7 +137,6 @@
     }
 
     .header_area {
-        background: #fcf0ca;
         padding: 10px 0;
         padding-top: 0;
     }
@@ -171,7 +166,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: #000000;
         padding-left: 0;
     }
 
@@ -197,7 +191,6 @@
 
     .about_area {
         padding-top: 80px;
-        background: #f4f2e3;
     }
 
     .about_area .row {
@@ -265,7 +258,6 @@
         margin-bottom: 10px;
     }
     .banner_area .float_address .address_content {
-        background: #f7bd01;
         padding: 20px 60px;
         position: relative;
         width: 100%;
@@ -290,7 +282,6 @@
 /*/ Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .product_area .single_product .product_txt_bg .product_txt {
-        color: #000000;
         padding: 50px 50px;
         padding-left: 0;
     }
@@ -310,7 +301,6 @@
     }
 
     .header_area {
-        background: #fcf0ca;
         padding: 10px 0;
         padding-top: 0;
     }
@@ -340,7 +330,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        color: #000000;
         padding-left: 0;
     }
 
@@ -366,7 +355,6 @@
 
     .about_area {
         padding-top: 0;
-        background: #f4f2e3;
     }
 
     .about_area .row {
@@ -423,7 +411,6 @@
     }
     .farm_area {
         padding-top: 60px;
-        background: #f7bd01;
         position: static;
         padding-bottom: 25px;
     }
@@ -445,7 +432,6 @@
         margin-bottom: 10px;
     }
     .banner_area .float_address .address_content {
-        background: #f7bd01;
         padding: 20px 60px;
         position: relative;
         width: 100%;
