@@ -264,6 +264,25 @@
         color: #515151;
         margin-bottom: 10px;
     }
+    .banner_area .float_address .address_content {
+        background: #f7bd01;
+        padding: 20px 60px;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .banner_area .float_address .wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner_area .float_address p {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -424,5 +443,24 @@
         text-decoration: none;
         color: #515151;
         margin-bottom: 10px;
+    }
+    .banner_area .float_address .address_content {
+        background: #f7bd01;
+        padding: 20px 60px;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .banner_area .float_address .wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner_area .float_address p {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 20px;
     }
 }

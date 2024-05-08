@@ -126,6 +126,55 @@ h6 {
 .banner_area{
     position: relative;
 }
+.overlay {
+    background: rgba(61, 47, 36, .6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+.overflow_hide {
+    overflow-y: hidden;
+}
+
+.overlay .overlay_item a {
+    float: right;
+    margin: 40px;
+    font-size: 22px;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 3px;
+}
+
+.overlay .overlay_item input {
+    margin-top: 20%;
+    padding: 20px 15px;
+    border: 0;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.overlay .overlay_item .fa-search {
+    position: absolute;
+    transform: translateY(-190%);
+    font-size: 20px;
+    right: 25%;
+    color: #fff;
+}
 .banner_area .menu_bar{
     position: absolute;
     top: 0;
@@ -354,8 +403,9 @@ h6 {
     07.PRODUCT AREA CSS
 
 =========================*/
-.product_area{
+.product_area {
     background: #eedbcc;
+    padding: 50px 0;
 }
 .product_area .single_product .product_txt_bg {
     /* background-image: url(../images/product_bg-1.png); */
@@ -706,4 +756,123 @@ h6 {
     height: 1px;
     background: #c2c2c2;
     margin: 20px 0;
+}
+
+/*=========================
+
+===========================
+
+===========================
+
+        ABOUT PAGE
+
+===========================
+
+===========================
+
+=========================*/
+.about_page_area {
+    padding: 50px 0;
+}
+.about_page_area .about_txt h4{
+    font-size: 35px;
+    font-weight: 500;
+    color: #000000;
+}
+.about_page_area .about_txt p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #0a0a0a;
+    margin: 0;
+    padding-bottom: 10px;
+}
+/*=========================
+
+===========================
+
+===========================
+
+        CONTACT PAGE
+
+===========================
+
+===========================
+
+=========================*/
+.banner_area .float_address {
+    color: #000000;
+    
+}
+.banner_area .float_address .address_content {
+    background: #f7bd01;
+    padding: 20px 60px;
+    position: absolute;
+    width: 90%;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner_area .float_address .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.banner_area .float_address .wrap i{
+    font-size: 20px;
+    padding-right: 10px;
+}
+.banner_area .float_address .wrap h6{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717;
+}
+.banner_area .float_address p{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.contact_area{
+    padding: 60px 0;
+    padding-bottom: 0;
+}
+.contact_area h4{
+    text-align: left;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+}
+.contact_area form {
+    text-align: center;
+}
+.contact_area form .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_area form .wrap input {
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+}
+.contact_area form textarea{
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+}
+.contact_area form button {
+    background: #f7bd01;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.contact_area .map{
+    margin-top: 60px;
 }

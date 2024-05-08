@@ -1,4 +1,15 @@
 $(function () {
+  // search click
+    $(".btn_search").click(function () {
+      $(".overlay").addClass("active");
+      $("body").addClass("overflow_hide");
+  });
+
+  $(".fa-close").click(function () {
+      $(".overlay").removeClass("active");
+      $("body").removeClass("overflow_hide");
+  });
+
   $('.shop_slick').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
