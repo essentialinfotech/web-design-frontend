@@ -1,4 +1,16 @@
 $(function () {
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+  
+      // Add or remove the "sticky" class based on scroll position
+      if (scroll >= 700) {
+        $('.menu_bar').addClass('sticky');
+      } else {
+        $('.menu_bar').removeClass('sticky');
+      }
+    });
+  });
   // search click
     $(".btn_search").click(function () {
       $(".overlay").addClass("active");
