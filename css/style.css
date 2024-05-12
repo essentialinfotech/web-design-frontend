@@ -1,0 +1,1515 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #FFFFFF;
+}
+
+button:focus {
+    outline: 0px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+.clr {
+    clear: both;
+}
+
+.default_btn {
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #000000;
+    padding: 8px 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.default_btn:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+/* section head style */
+
+.section_head {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section_head h6 {
+    color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+}
+
+.section_head h2 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 32px;
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.section_head p {
+    color: #3e3e3e;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 60px;
+}
+
+
+
+
+/* End of common CSS */
+
+/*=========================
+
+    01.HEADER AREA CSS
+
+=========================*/
+.header_area {
+    background: #204357;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.header_area .border_l {
+    border-left: 1px solid #b1b1b1;
+}
+
+.header_area .contact {
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header_area .contact span {
+    padding-left: 5px;
+}
+
+.header_area .location {
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header_area .location span {
+    padding-left: 5px;
+}
+
+.header_area .lang {
+    text-align: right;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header_area .lang p {
+    margin: 0;
+}
+
+.header_area .log {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.header_area .log a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header_area .log span {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+/*=========================
+
+    02.MENU AREA CSS
+
+=========================*/
+.menubar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 105px;
+    z-index: 99;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 105px;
+    z-index: 99999;
+    background: #2C5770;
+    transition: all .5s linear;
+}
+.sticky .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+a.nav-link {
+    margin-left: 20px;
+    color: #FFFFFF !important;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+a.nav-link:hover {
+    color: #F3EB34 !important;
+    transition: all .5s linear;
+}
+
+a.nav-link.active {
+    border-bottom: 2px solid #F3EB34;
+}
+
+ul.navbar-nav {
+    padding-right: 25px;
+}
+
+/*=========================
+
+    03.BANNER AREA CSS
+
+=========================*/
+.banner_area {
+    position: relative;
+}
+
+.banner_area .banner_overlay {
+    background-color: rgb(0, 31, 48);
+    opacity: 0.9;
+}
+
+.banner_area .banner_overlay .banner_img {
+    background-image: url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner_area .banner_overlay .banner_img .banner_content {
+    text-align: center;
+    padding: 220px 0;
+}
+
+.banner_area .banner_overlay .banner_img .banner_content h6 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.banner_area .banner_overlay .banner_img .banner_content h1 {
+    text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.banner_area .banner_overlay .banner_img .banner_content button {
+    background: transparent;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.banner_area .banner_overlay .banner_img .float_info {
+    position: absolute;
+    bottom: -40px;
+    background: #ffffff;
+    color: #000000;
+    left: 50%;
+    width: 45%;
+    transform: translateX(-50%);
+}
+
+.banner_area .banner_overlay .banner_img .float_info .wrap_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .left_content .head {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .left_content .head span {
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5d5d5d;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .left_content .head i {
+    color: #5d5d5d;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .left_content .date p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .left_content .date p span {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5d5d5d;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .left_content .date .icon_wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .left_content .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .right_content.bg {
+    background: black;
+    padding: 33px 15px;
+    margin: -10px 0;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .right_content .head {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .right_content .head span {
+    padding-right: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5d5d5d;
+
+}
+
+.banner_area .banner_overlay .banner_img .float_info .right_content .head i {
+    color: #5d5d5d;
+
+}
+
+.banner_area .banner_overlay .banner_img .float_info .right_content .date p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .right_content .date p span {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5d5d5d;
+}
+
+.banner_area .banner_overlay .banner_img .float_info .right_content.bg .head span {
+    color: #ffffff;
+}
+
+/*=========================
+
+    04.ABOUT AREA CSS
+
+=========================*/
+.about_area {
+    padding: 130px;
+}
+
+.about_area .wrap_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about_area .wrap_content .content {
+    color: #000000;
+    display: inline-block;
+    padding: 25px;
+    background: #ffffff;
+    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    margin-right: -50px;
+    background: #f6f6f6;
+}
+
+.about_area .wrap_content .content h6 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.about_area .wrap_content .content p {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.about_area .wrap_content .content_img {
+    width: 430px;
+}
+
+/*=========================
+
+    05.BEST AREA CSS
+
+=========================*/
+.best_area {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background: #efefef;
+}
+
+.best_area .single_card:hover {
+    box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1);
+    transition: all .2s linear;
+}
+
+.best_area .single_card:hover .default_btn {
+    background: #c5a46e;
+    transition: all .5s linear;
+}
+
+.best_area .card_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.best_area .card_title h4{
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+.best_area .card_title h4::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #c5a46e;
+    z-index: 9;
+}
+.best_area .single_card .card {
+    border: none;
+    border-radius: 0;
+}
+
+.best_area .single_card {
+    margin-bottom: 25px;
+}
+.best_area .bestroom_slider .single_card {
+    margin: 0 15px;
+}
+
+.best_area .single_card .star_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.best_area .single_card .star_wrap img {
+    margin-left: 5px;
+    width: 15px;
+}
+
+.best_area .single_card .card_head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.best_area .single_card .card_head h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.best_area .single_card .bottom_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.best_area .single_card .bottom_wrap p {
+    margin: 0;
+    color: #c5a46e;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.best_area .single_card .bottom_wrap span {
+    color: #797979;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.best_area .view_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.best_area .view_wrap p {
+    margin: 0;
+    background: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+
+.best_area .view_wrap button {
+    text-decoration: none;
+    border: none;
+    background: transparent;
+}
+
+.best_area .view_wrap i {
+    font-size: 13px;
+    border: 1px solid #c5a46e;
+    padding: 7px 10px;
+    color: #c5a46e;
+}
+
+/*=========================
+
+    06.PACKAGE AREA CSS
+
+=========================*/
+.package_area .package_bg {
+    background-image: url("../images/package_banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.package_area .package_bg .package_content {
+    padding: 50px 0;
+}
+
+.package_area .package_bg .package_content .section_head {
+    margin: 0;
+    color: #ffffff;
+}
+
+.package_area .package_bg .package_content .section_head h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+
+}
+
+.package_area .package_bg .package_content .section_head h6 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.package_area .package_bg .package_content .section_head .default_btn {
+    background: #c5a46e;
+}
+
+/*=========================
+
+    07.DEALS AREA CSS
+
+=========================*/
+.deals_area {
+    padding-bottom: 80px;
+}
+
+.deals_area .row {
+    align-items: center;
+}
+
+.deals_area .section_head p {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.deals_area .deals_img {
+    position: relative;
+}
+
+.deals_area .deals_img .deals_txt {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 99;
+    display: inline-block;
+    background: rgb(0, 0, 0, 0.8);
+}
+
+.deals_area .deals_img .deals_txt .default_btn {
+    background: #c5a46e;
+}
+
+.deals_area .deals_img .deals_txt .head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #797979;
+    padding: 0 15px;
+}
+
+.deals_area .deals_img .deals_txt .head p {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding: 20px 0;
+    padding-right: 55px;
+}
+
+.deals_area .deals_img .deals_txt .body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.deals_area .deals_img .deals_txt .body .marking {
+    background: #797979;
+    width: 1px;
+    height: 65px;
+}
+
+.deals_area .deals_img .deals_txt .body .body_txt p {
+    margin: 0;
+    color: #c5a46e;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.deals_area .deals_img .deals_txt .body .body_txt span {
+    color: #797979;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/*=========================
+
+    08.SERVICES AREA CSS
+
+=========================*/
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.service_area {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.service_area .service_content {}
+
+.service_area .service_content .fade:not(.show) {
+    display: none !important;
+}
+
+.service_area .service_content .list {}
+
+.service_area .service_content .list ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.service_area .service_content .list ul li button {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    border: navajowhite;
+    padding: 20px 50px;
+    margin: 0;
+    border-radius: 0;
+    text-decoration: none;
+}
+
+.service_area .service_content .list ul li button:hover {
+    background: #c5a46e;
+    color: #ffffff;
+    transition: all .2s linear;
+}
+
+.service_area .service_content .wrap_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.service_area .service_content .wrap_content .content_img {
+    width: 50%;
+}
+
+.service_area .service_content .wrap_content .content_txt {
+    background: #0D0C0C;
+    width: 50%;
+    padding: 40px 30px;
+}
+
+.service_area .service_content .wrap_content .content_txt h6 {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.service_area .service_content .wrap_content .content_txt h2 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.service_area .service_content .wrap_content .content_txt h2 span {
+    color: #c5a46e;
+}
+
+.service_area .service_content .wrap_content .content_txt p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.service_area .service_content .wrap_content .content_txt .default_btn {
+    background: #c5a46e;
+}
+
+/*=========================
+
+    09.TESTIMONIALS AREA CSS
+
+=========================*/
+.testimonial_area {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.testimonial_area .wrap_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonial_area .wrap_content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.testimonial_area .wrap_content ul li {
+    list-style: none;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #c5a46e;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 6px;
+}
+
+.testimonial_area .wrap_content ul li.slick-active {
+    background: #c5a46e;
+    border: 2px solid #c5a46e;
+}
+
+.testimonial_area .wrap_content ul li button {
+    display: none;
+}
+
+.testimonial_area .wrap_content .client_txt {
+    text-align: center;
+    width: 50%;
+    background: #0D0C0C;
+    padding: 29px 70px;
+}
+
+.testimonial_area .wrap_content .client_txt p {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.testimonial_area .wrap_content .client_txt h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c5a46e;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.testimonial_area .wrap_content .client_txt h6 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.testimonial_area .wrap_content .client_img {
+    width: 50%;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+/*=========================
+
+    10.BLOG AREA CSS
+
+=========================*/
+.blog_area {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.blog_area .single_blog .card {
+    border: 1px solid #d5d5d5;
+    margin: 0 15px;
+}
+
+.blog_area .single_blog .cmt_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #0d0c0c;
+    padding: 0 18px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog_area .single_blog .card-body h6 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.blog_area .single_blog .card-body p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #323232;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.blog_area .single_blog .card-body a {
+    text-decoration: none;
+    color: #c5a46e;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.blog_area ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.blog_area ul li {
+    list-style: none;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #c5a46e;
+    border-radius: 50%;
+    background: transparent;
+    margin: 0 6px;
+}
+
+.blog_area ul li.slick-active {
+    background: #c5a46e;
+    border: 2px solid #c5a46e;
+}
+
+.blog_area ul li button {
+    display: none;
+}
+
+.blog_area .blog_icon {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*=========================
+
+    11.FOOTER AREA CSS
+
+=========================*/
+.footer_area {
+    text-align: center;
+}
+
+.footer_area .footer_bg {
+    background-image: url("../images/footer_banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer_area .footer_bg h6 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c5a46e;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer_area .footer_bg h4 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.footer_area .footer_bg .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footer_area .footer_bg .email input {
+    border: none;
+    border: 1px solid #ffffff;
+    border-right: none;
+    background: transparent;
+    padding: 5px 15px;
+    width: 350px;
+}
+
+.footer_area .footer_bg .email input::placeholder {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer_area .footer_bg .email .default_btn {
+    background: #c5a46e;
+    padding: 8px 30px;
+}
+
+.footer_area .footer_bg .policy {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c5a46e;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+.footer_area .footer_bg .logo {
+    margin-bottom: 30px;
+}
+
+.footer_area .footer_bg .address_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer_area .footer_bg .address_wrap p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer_area .footer_bg .social_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.footer_area .footer_bg .social_wrap i {
+    padding: 0 15px;
+}
+
+.footer_area .footer_bg .bar {
+    width: 100%;
+    height: 1px;
+    background: #797979;
+}
+
+.footer_area .footer_bg .credit {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 30px 0;
+}
+
+.footer_area .footer_bg .credit span {
+    color: #c5a46e;
+}
+
+/*=========================
+
+
+=========================*/
+
+/* SIGN UP PAGE */
+
+/*=========================
+
+
+=========================*/
+.filter {
+    pointer-events: none;
+}
+
+.signup_area {}
+
+.signup_area .singup_form {
+
+    padding: 25px 30px;
+    position: absolute;
+    top: 30%;
+    z-index: 99;
+    background: #ffffff;
+    width: 30%;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.signup_area .singup_form h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup_area .singup_form form {
+    color: #ffffff;
+    text-align: center;
+}
+
+.signup_area .singup_form form a.forgot {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+
+.signup_area .singup_form form p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.signup_area .singup_form form p.gap_or {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    background: #ffffff;
+    display: inline-block;
+    padding: 0 8px;
+    position: relative;
+    margin: 15px;
+}
+
+.signup_area .singup_form form p.gap_or::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: #b9b9b9;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+.signup_area .singup_form form p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.signup_area .singup_form form button {
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #145677;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.signup_area .singup_form form .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #727272;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.signup_area .singup_form form .wrap i {
+    padding-right: 10px;
+}
+
+.signup_area .singup_form form input {
+    width: 100%;
+    border: none;
+    background: transparent;
+}
+
+.signup_area .singup_form form input::placeholder {
+    color: #ffffff;
+}
+
+.signup_area .singup_form form .social_wrap i {
+    margin: 0 10px;
+    font-size: 18px;
+}
+/*=========================
+
+
+=========================*/
+
+/* EVENT PAGE */
+
+/*=========================
+
+
+=========================*/
+.event_area{
+    padding: 50px 0;
+}
+.event_area .single_event{
+    margin-bottom: 20px;
+}
+/*=========================
+
+
+=========================*/
+
+/* CONTACT PAGE */
+
+/*=========================
+
+
+=========================*/
+.contact_area{
+    padding: 60px 0;
+    padding-bottom: 0;
+}
+.contact_area h4{
+    text-align: left;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+}
+.contact_area form {
+    text-align: center;
+}
+.contact_area form .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact_area form .wrap input {
+    margin-bottom: 20px;
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+}
+.contact_area form textarea{
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 15px;
+}
+.contact_area form button {
+    background: #c5a46e;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.contact_area .contact_info h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #040404;
+}
+.contact_area .contact_info p{
+    color: #a4a4a4;
+    font-size: 13px;
+    font-weight: 400;
+}
+.contact_area .contact_info .wrap h6 span{
+    padding-right: 20px;
+}
+.contact_area .contact_info .wrap p{
+    padding-left: 40px;
+}
+.contact_area .map{
+    margin-top: 60px;
+}
+/*=========================
+
+
+=========================*/
+
+/* RESERVATION PAGE */
+
+/*=========================
+
+
+=========================*/
+.reserve_area {
+    padding: 60px 0;
+}
+.reserve_area .wrap_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #0b0b0b;
+    font-size: 16px;
+    font-weight: 500;
+}
+.reserve_area .wrap_nav .border_e {
+    border: 1px solid #787878;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+.reserve_area .wrap_nav span{
+    padding-right: 10px;
+}
+.reserve_area .wrap_nav p{
+    margin: 0;
+}
+.reserve_area .wrap_nav button {
+    background: transparent;
+    border: none;
+    color: #0b0b0b;
+    padding: 0;
+    font-size: 15px;
+}
+.reserve_area .filter_side {
+    padding: 20px 20px;
+    border: 1px solid #999999;
+}
+.reserve_area .filter_side .budget_wrap .slider{
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+.reserve_area .filter_side .budget_wrap .slider .progress{
+    height: 5px;
+    left: 20%;
+    right: 20%;
+    position: absolute;
+    border-radius: 5px;
+    background: #17a2b8;
+}
+.reserve_area .filter_side .budget_wrap .range-input{
+    position: relative;
+}
+.reserve_area .filter_side .budget_wrap .range-input input{
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+}
+.reserve_area .filter_side .budget_wrap .range-input input[type="range"]::-webkit-slider-thumb{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    background: #17a2b8;
+}
+.reserve_area .filter_side .budget_wrap .range-input input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    -moz-appearance: none;
+    background: #17a2b8;
+}
+.reserve_area .filter_side .budget_wrap {
+    color: #000000;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #999999;
+}
+.reserve_area .filter_side .budget_wrap p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.reserve_area .filter_side .budget_wrap p span {
+    color: #5d5d5d;
+}
+.reserve_area .filter_side .budget_wrap .price-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.reserve_area .filter_side .budget_wrap .price-input .field {
+    display: ruby;
+}
+.reserve_area .filter_side .budget_wrap .price-input .field input{
+    width: 50%;
+    text-align: center;
+    background: transparent;
+    border: none;
+}
+.reserve_area .filter_side .pop_filter{
+    color: #000000;
+    padding-top: 30px;
+}
+.reserve_area .filter_side .pop_filter h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.reserve_area .filter_side .pop_filter.border_bottom{
+    border-bottom: 1px solid #999999;
+}
+.reserve_area .filter_side .pop_filter ul {
+    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.reserve_area .filter_side .pop_filter ul li{
+    font-size: 13px;
+    font-weight: 400;
+}
+.reserve_area .filter_side .pop_filter ul li .wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.reserve_area .reservation_wrap .single_reservation{
+    margin-top: 30px;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_img{
+    display: inline-block;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_info h4 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_info p{
+    color: #6a6a6a;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_info span{
+    color: #c5a46e;
+    font-size: 13px;
+    font-weight: 400;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_img img{
+    width: 100%;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book{
+    text-align: right;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .star_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .price {
+    padding: 10px 0;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .price p{
+    color: #c5a46e;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .price span{
+    color: #797979;
+    font-size: 12px;
+    font-weight: 400;
+}
+.reserve_area .reservation_wrap .single_reservation .reservation_book .default_btn{
+    background: #c5a46e;
+}
+/*=========================
+
+
+=========================*/
+
+/* ABOUT PAGE */
+
+/*=========================
+
+
+=========================*/
+.abour_page_part {
+    padding: 50px 0;
+}
+.abour_page_part .txt {
+    padding: 20px 58px;
+}
+.abour_page_part .txt span{
+    color: #525252;
+    font-size: 13px;
+    font-weight: 400;
+}
+.abour_page_part .txt h4{
+    font-weight: 600;
+    font-size: 20px;
+    color: #0d0c0c;
+}
+.abour_page_part .txt p{
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/*=========================
+
+        RESORT PART
+
+=========================*/
+
+.resort_area {
+    padding: 50px 0;
+}
+.resort_area .report_info .resort_list .wrap i{
+    color: #c5a46e;
+}
+.resort_area .report_info .resort_list .wrap p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #989898;
+    text-decoration: underline;
+    display: inline-block;
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: 5px;
+}
